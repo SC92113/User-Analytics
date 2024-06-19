@@ -1,0 +1,225 @@
+Feature_name,Feature_objective,Feature_requirement,Product_Data_concern,Nature_type,Feature_category,Feature_type,Input_type,Data_category,Data_type,Data_availability,Org_name,User_name,User_type,Repeated_times,Feature_remark,Feature_priority
+Mobile app/ user friendly mobile view,Experience enhancement,"Expect
+- anyone who download the app that can receive in-app alarm messages anytime instead of whatsapp reminder to specific group of site contacts, no receiver limit (no cost concern)
+- scrollable graph view
+- good and responsive mobile font size and style
+- display SOC, load on card
+- display issue log messages
+- seamless experiecne without login everytime
+
+Remark
+Aegis (Mike & Jacky) said on site staff would be the main user of app, no need to input website and login everytime
+Gammon (Ivan and his team) want to sign up for beta testing","- Brandon's thought: make a simple mobile app
+- if app, decide app programming language, i.e. react native
+- the main point to differentiate the usage of website and mobile app is mobile app only highlight/ pin the most important information such as SOC, load and log message that frontline workers need most all the time, while website contains full set of data in detail ",SW,All,Existing,Both,General,Not applicable,Not applicable,Aegis,Tim,Plant & Logistics,10,"Also requested by Gammon, Chun Wo, Hip Seng, Aegis, Chevalier, Paul Y, Tsun Yip, Soletanche Bachy, Long Faith",
+Site details and equipment list wizard,Data integrity assurance,"Expect
+- non mandatory input section at info card
+- fill in reference factors/ variables that would affect the data value
+Include reference factors/ variables, i.e.  
+- powered equipments (type & qty, power)
+- electricity supplier (by phases)
+- DG usage
+- site working hour
+- powered equipment power time
+- energy output for each of the powered equipment
+Definition of reference factors/ variables/ legend: the factor that influences carbon saving caluculation","- define input way to reduce error (drop down menu input, type input)
+- input data storage and process
+- input history (who and when is last update, accessed by users?)
+- where to storage input data? Netsuite/ SW timescale/ Data timescale",SW,Device monitor,New,User input,Device info,Real time,Not applicable,Chun Wo,Tiffany ,"Environmental, Safety & Sustainability",7,"Also requested by Hip Seng, Paul Y, Tysan, Hip Hing, Penta Ocean, Yau Lee",
+Alarms - field support enhancements,Site & schedule planning,"Expect
+- remove email
+- whatsapp > SMS
+- chinese message could be shared to on site worker
+- 2 way message to ask help if necessary",,SW,Issue log & Alarm,Existing,User input,Issue log,Real time,Accessible,CR Construction,Oscar,Plant & Logistics,6,"Also requested by Chun Wo, ChinaStates, Shui On, Tysan, Henderson",
+Chinese version,Experience enhancement,"Expect
+- chinese version for whole Enernet (all features)
+- apply to all displayed information and pop up messages",- professional terms remain unchanged,SW,All,New,Non user input,General,Not applicable,Accessible,Gammon,Vincent ,Plant & Logistics,6,"Also requested by Aegis, CR, Gammon, Tysan, Henderson",
+Energy 2.0 / energy data breakdown,Project & site assessment,"Expect
+- breakdown and show the energy in/ out data for different powered equipments on omnigraph
+- display energy dataset, i.e. daily monthly, yearly energy in& out, for each equipment in energy card and report 
+- displayed by table in report
+- displayed by graph and whole value in card
+- download csv file of energy in & out data in selected period of time at energy card
+
+Remark
+Energy auditors: want to see which equipment has the largest energy / diesel consumption
+User: have assessment to evaluate equipment performance ","- collect powered equipments info, to be provided by client
+- min. input current to power equipments so to identify which equipment is powered in given period of time
+- talk to data team/ HW to find any way to precisely identify which period power which equipment, i.e. input current? physical on site record",SW,Device monitor,Existing,Non user input,Energy,Real time & Historical,Inaccessible,Shui On,Melody,"Environmental, Safety & Sustainability",4,"Also requested by Tysan, Hip Hing, Penta Ocean",
+Battery efficiency overview,Project & site assessment,"Expect
+- PCS efficiency
+- PCS general performance
+- estimated lifespan/ fade out time before next maintenance
+- predictive alarm to remind maintenance and support",- any concern to show battery lifespan?,SW,Device monitor,New,Non user input,Battery info,Real time & Historical,Inaccessible,Chun Wo,Tiffany ,"Environmental, Safety & Sustainability",3,"Also requested by Paul Y, Tsun Yip",
+Device health summary_a,Project & site assessment,"Expect
+- downtime status in %
+- battery capacity, in mAH
+- no. of key incidents/ issues","- define downtime
+- define incident/ which level of issue should be counted
+- any concern to show battery capacity/ way to present capacity value?",SW,Device monitor,Existing,Non user input,Device info,Historical,Accessible,Aggressive,Billy,"Environmental, Safety & Sustainability",3,"Also requested by Paul Y, Tsun Yip",
+AI device status forecasting,Site & schedule planning,"Expect
+- provide insight 
+- predictive message by Whatsapp, SMS, email
+- device status forecasting
+
+Current
+- provide processed data 
+- active message by Whatsapp, SMS, email
+- device status reporting ","- tons of device data
+- TBC with HW teams on different scenarios prediction
+- data planning
+- data modeling and training
+",SW,Issue log & Alarm,New,Non user input,All,Real time & Historical,Inaccessible,Paul Y,Zeca,Other,2,"ESSI refers to Environmental, Innovation, Sustainability
+Also requested by Hip Seng",
+Alarms - customized alerts,Site & schedule planning,"Expect
+- enhance the accuracy of alarm message
+- set indicator range for each type of data in alarm message, i.e. load > 80%, etc., once it's over the range and detected, alarm message would be sent","- define the range of each of data, i.e in % / whole number that should trigger and push messages
+- cover all types of data related to alarm, i.e. load, SOC, max. temp, in & out current",SW,Issue log & Alarm,Existing,Non user input,Issue log,Real time,Accessible,Chevalier,Victa,Plant & Logistics,2,Also requested by Paul Y,
+Display daily record of carbon and diesel saving value in table ,Project & site assessment,"Expect
+- display in report
+- create a table of daily record for carbon and diesel saving value only
+- integrate with summary table of total and monthly value","- define two UI/ UX
+- 1: bar chart with daily value marked on, can refer to energy example
+- 2: daily record table for current, SOC, energy, can refer to daily record",SW,Report,Existing,Non user input,Carbon & Diesel,Historical,Accessible,Paul Y,Kency,Plant & Logistics,2,Also requested by Shui On,
+Display noise and dust emission,Project & site assessment,"Expect
+- display saving related data, i.e. noise level, dust emission volume
+- display daily, monthly, yearly in a card on device page and report
+- attach Enertainer calibration cert by authorized third parties if possible
+
+Current
+- besides carbon and diesel saving, all of the data are site/ operationa related","- calibration cert TBC with HW and product team, might need to group all the user manual, catalog and certs in an open source page ",SW,Device monitor,Existing,Non user input,"Noise, Dust",Real time & Historical,Inaccessible,Tysan,Ms. Wong,"Environmental, Safety & Sustainability",2,Also requested by Henderson,
+Edit data values on xHMI,Site & schedule planning,"Expect
+- edit/ modify the data value, outout voltage on any cards of xHMI
+- show edit log and history
+- any form of devices that frontline workers can easily access and contact
+
+Remarks
+painpoint is mechanical team don't login to Enernet to get the data, they are only in charge of hardware and xHMI, which are somethings on site can contact directly ","- when two way communication is ready, edit function of pc tools is available in any form of devices, i.e. Enernet, mobile
+- now 95% of xHMI storage is used up so xHMI is not able to apply extra edit logic, should be replaced by other device in future",FW,FW,FW,-,-,-,-,Siemens Energy,Matthias,Building & Project,2,Also requested by Long Faith,
+Omnigraph 2.0_b / data breakdown,Project & site assessment,"Expect
+- breakdown and show the all types of data for different powered equipments on omnigraph
+- data include input & output current, SOC, load, max. temp
+- provide a drop down menu to switch to related dataset of powered equipments","- collect powered equipments info, TBC by client
+- min. input current to power equipments so to identify which equipment is powered in given period of time
+- talk to data team/ HW to find any way to precisely identify which period power which equipment, i.e. input current? physical on site record",SW,Device monitor,Existing,Non user input,All,Real time & Historical,Inaccessible,Shui On,Melody,"Environmental, Safety & Sustainability",2,Also requested by Tysan,
+Saving and emission value of diesel generator,Data comparsion & evaluation,"Expect
+- monthly value from DG on card 
+- total value from DG on card 
+- show trend on same graph","- calculate on diesel emission value and emission factor
+- include counting of non site working hour (whole carbon & diesel)
+- define to reference which model of DG",SW,Device monitor & Report,Existing,Non user input,Carbon & Diesel,Historical,Inaccessible,Paul Y,Zeca,Other,2,Also requested by Shui On,
+Admin control 2.0,Experience enhancement,"Expect
+- admin function only
+- admin can edit, delete inactive accounts permanently instead of disable accounts
+- admin can search the edit history, i.e. add, delete by time range",,SW,Setting,Existing,User input,User credential,Not applicable,Accessible,Aegis,Tim,Plant & Logistics,1,,
+Alarms - scheduled alerts,Site & schedule planning,"Expect
+- set and define schedule to push the messages",,SW,Issue log & Alarm,Existing,User input,Issue log,Real time,Accessible,Aegis,Tim,Plant & Logistics,1,,
+Calculator for cost saving ,Experience enhancement,"Expect
+- calculator to select oil company and input oil price
+- display a list of oil companies in drop down menu
+- provide type field to input oil price
+- click a button to run the program 
+- no history logged
+","- calculator is showing default fleet saving value x selected oil price = profit saving
+",SW,Device monitor,New,User input,Carbon & Diesel,Not applicable,Not applicable,Chun Wo,Tiffany ,"Environmental, Safety & Sustainability",1,"Penta Ocean has similar kind of in house program, which input
+- energy data
+- emission factor",
+Carbon and diesel saving 2.0,Project & site assessment,"Expect
+- get saving value data from specific time frame (can't select flexibly in existing date filter)
+- download csv file for the saving data in selected time period at carbon & diesel saving card (similar to energy 2.0)",,SW,Device monitor,Existing,Non user input,Carbon & Diesel,Real time & Historical,Accessible,Hip Hing,Ken,"Environmental, Safety & Sustainability",1,,
+Current overview 2.0 including power analyzer value,Site & schedule planning,"Expect
+- display power analyzer value","- check with HW, FW
+- no value from power analyzer for each device",SW,Device monitor & Report,Existing,Non user input,Current,Real time & Historical,Inaccessible,Hip Seng,Ka Ho,Plant & Logistics,1,Brandon opposes this,
+Device health summary_b,Project & site assessment,"Expect
+- device reliability in %",,SW,Device monitor,Existing,Non user input,Device info,Real time & Historical,Accessible,Hip Hing,Herman,Plant & Logistics,1,,
+Device usage summary,Site & schedule planning,"Expect
+- discharge summary for each device
+- discharging time in current card
+- charging time in current card
+- accumulated usage time (running hours)",,SW,Device monitor,Existing,Non user input,Current,Real time & Historical,Accessible,Aegis,Tim,Plant & Logistics,1,,
+Display energy loss in energy card,Project & site assessment,"Expect
+- show total energy loss per day, by month and given period of time
+- display value on energy card
+- display value on graph by using different color to further differentiate from energy in and out value",,SW,Device monitor,Existing,Non user input,Energy,Real time & Historical,Accessible,Paul Y,Byron,"Environmental, Safety & Sustainability",1,,
+Display first day that deploy on site and maintenance date,Project & site assessment,"Expect
+- first day that deploy on site and maintenance date",,SW,Device monitor,Existing,Non user input,Device info,Historical,Accessible,Aegis,Tim,Plant & Logistics,1,,
+Display rental end date for rental device,Project & site assessment,"Expect
+- rental end date/ contract period on device card",,SW,Device monitor,Existing,Non user input,Device info,Historical,Accessible,Gammon,Olivier,Other,1,,
+Display smart charging status on Enernet,Site & schedule planning,"Expect
+- display real time enable/ disable status
+- display enable/ disable record, i.e. date, period last
+- display parameter setting
+- display schedule setting
+- display edit record, i.e. date, time, type",,SW,Device monitor,New,Non user input,Current,Real time,Inaccessible,Yau Lee,Chan Pang,"Environmental, Safety & Sustainability",1,,
+Display the optimum / lowest SOC,Site & schedule planning,"Expect 
+- show the optimum / lowest SOC on battery card, 
+i.e. i icon for minimum SOC definition",,SW,Device monitor & Report,Existing,Non user input,Battery info,Real time,Accessible,Gammon,Ivan,Other,1,,
+Downtime summary,Project & site assessment,"Expect
+- downtime status in %
+- downtime period in accumulated mins","- define downtime
+- devices in overnight site working hour and inactive should be be included",SW,Issue log & alarm,Existing,Non user input,Issue log,Historical,Accessible,Paul Y,Kency,Plant & Logistics,1,,
+Full set of data from AC room & DC room,Site & schedule planning,"Expect
+- show input/ output current, energy in/ out, SOC, Max. temp from both AC & DC room","- check with HW to see which data/ how many data the sysBMS can provide
+- display in which level? system/ string/ EMS, need to futher define with client once confirmed to implement",SW,Device monitor,New,Non user input,All,Real time & Historical,Inaccessible,Gammon,Vincent ,Plant & Logistics,1,,
+Issue log 2.0 / Issue log calendar,Project & site assessment,"Expect
+- display uptime status and downtime status per each day in a month
+- default monthly calendar view
+- when uptime < 99%, it shows red as downtime
+- when uptime => 99%, it shows green as uptime
+- for downtime date, should show the max. no. of issues, i.e error/ warning
+- integrate with existing uptime table",,SW,Issue log & Alarm,Existing,Non user input,Issue log,Historical,Accessible,Paul Y,Byron,"Environmental, Safety & Sustainability",1,,
+Metric range indicator_a,Project & site assessment,"Expect
+- show in data explaination of report
+- help in interpreting monthly performance 
+- provide indicator for all types of data (current, energy, carbon & diesel) to see the device in which status
+- indicator could be set in 3 ranges i.e. healthy/ unhealthy/ fair OR good/ bad/ fair",,SW,Report,Existing,Non user input,Report,Historical,Accessible,Paul Y,Zeca,"Environmental, Safety & Sustainability",1,,
+Metric range indicator_b,Site & schedule planning,"Expect
+- show in each card of device page
+- provide indicator for all types of data (current, energy, carbon & diesel) to see the device in which status
+- indicator could be set in 3 ranges i.e. healthy/ unhealthy/ fair OR good/ bad/ fair
+
+Users can take action on site based on device status",,SW,Device monitor,Existing,Non user input,All,Real time,Accessible,Tsun Yip,Ken,Plant & Logistics,1,,
+Omnigraph 2.0_a,Project & site assessment,"Expect
+- indicate max. and min. values of the following type of data
+- both max and min value: output current, temperature, load
+- remains unchanged: min. SOC, average input current
+
+Current
+- max value only: output current, temperature, load",,SW,Device monitor,Existing,Non user input,"Current, Temperature, Load",Real time & Historical,Accessible,Paul Y,Byron,"Environmental, Safety & Sustainability",1,,
+Omnigraph 2.0_c,Project & site assessment,"Expect
+- export full set of data by each data point into csv table
+
+Out of scope
+- max, min value of data
+- breakdown graph data for different equipments",,SW,Device monitor,Existing,Non user input,All,Real time & Historical,Accessible,Soletanche Bachy,Philip,Building & Project,1,,
+Power efficiency overview,Site & schedule planning,"Expect
+- power usage effectiveness / average power utilization
+- power max. usage ","- PUE = total facility power/ IT equipment
+- define PUE formula
+- define usage 
+- some call PUE / power utilization",SW,Device monitor,New,Non user input,Current,Historical,Inaccessible,Paul Y,Kency,Plant & Logistics,1,,
+Provide 2 AC external connection bars to power equipments,Site & schedule planning,"Expect
+- provide 2 AC external connection bars to power equipments
+- name, i.e. connection port 1 & 2
+- equipments connected to corresponding ports will upload data separately
+- data from connection port 1 will be output data 1
+- data from connection port 2 will be output data 2
+- identify data belongs to which equipment quickly","- handle too many modules on Enertainer
+- distribution board is TBC",HW,HW,HW,-,-,-,-,Penta Ocean,Cathy,"Environmental, Safety & Sustainability",1,,
+Quick access helper,Experience enhancement,"Expect
+- suggested browser
+- search & input field",- group all the helper tools as a tool page ,SW,General,New,User input,General,Not applicable,Not applicable,Aegis,Tim,Plant & Logistics,1,,
+Time period showing highest energy consumption/ energy peak,Site & schedule planning,"Expect
+- energy in & out value per time range for each day on chart
+- summarized energy out peak value, max. per day (historical data only)
+- identify which time range carrying the peak value","- energy in & out data by time
+- data upload frequency 
+- peak duration analysis",SW,Device monitor,Existing,Non user input,Energy,Real time & Historical,Accessible,CR Construction,Oscar,Plant & Logistics,1,,
+View and downlaod maintenance report,Experience enhancement,"Expect
+- admin can view report in device page/ source page
+- additional page as source page (TBC)
+- can sort, view, download the report per device/ a group of devices
+- have mass download, select specific devices for download ",,SW,Report,Existing,Non user input,Report,Historical,Accessible,Gammon,Vincent ,Plant & Logistics,1,,
+Visualize carbon saving with no. of trees,Experience enhancement,"Expect
+- viusalize 1 ton of cabon saved equal to how many trees saved
+- simple insight to make value easy to read",,SW,Device monitor & Report,Existing,Non user input,Carbon & Diesel,Not applicable,Not applicable,Chun Wo,Tiffany ,"Environmental, Safety & Sustainability",1,,
