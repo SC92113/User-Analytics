@@ -1,6 +1,11 @@
 # User-Analytics
 ### My 'Out of PM scopes' data project 
 
+### Executive Summary
+This data insight report provides a comprehensive analysis of the user segments, preferences, and needs related to the usage of our product, Enernet. As a product manager, by leveraging data from user population spreadsheets and qualitative and quantitative user feedback, I aim to improve Enernet to better serve our users. The analysis reveals four primary user segments, with the "Environmental, Safety & Sustainability" segment being the most significant. The report highlights key user pain points, preferred features, and useful data types, offering insights to guide product enhancements.
+
+#
+
 👀 To view the live dashboard and run code with full functionality of jupyter notebook, click Binder
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SC92113/User-Analytics/HEAD)
 
